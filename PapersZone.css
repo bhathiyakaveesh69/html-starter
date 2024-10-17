@@ -735,6 +735,48 @@ body.grade-page {
     text-align: center;
     padding: 40px 20px;
     background: linear-gradient(135deg, #212121, #0d0d0d);
+    border-radius: 60px;
+}
+.breadcrumbs-section {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.breadcrumbs {
+    font-size: 0.9em;
+    color: #b3b3b3;
+    background: linear-gradient(135deg, #1e1e2a, #00001f);
+    padding: 10px 20px;
+    border-radius: 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: background 0.3s, color 0.3s;
+}
+
+.breadcrumbs a {
+    color: #b3b3b3;
+    text-decoration: none;
+    margin: 0 8px;
+    transition: color 0.3s;
+}
+
+.breadcrumbs a:hover {
+    color: #ffffff;
+}
+
+.breadcrumbs a::after {
+    content: ">";
+    margin-left: 8px;
+    color: #b3b3b3;
+}
+
+.breadcrumbs a:last-child::after {
+    content: "";
+}
+
+.breadcrumbs:hover {
+    background: linear-gradient(135deg, #2b2b40, #0c0c22);
+    color: #ffffff;
 }
 
 .header-content h1 {
