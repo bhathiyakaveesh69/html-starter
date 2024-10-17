@@ -154,7 +154,7 @@
                 <h3>1st Term Test</h3>
                 <div class="subject-container">
                     <ul class="pdf-list">
-                        <li><a href="path/to/1st_term_math.pdf" class="pdf-link"><span class="pdf-icon"></span>Download Mathematics PDF</a></li>
+                        <li><a href="grade1-term-tests-interactive.html" class="pdf-link"><span class="pdf-icon"></span>Download Mathematics PDF</a></li>
                         <!-- Add more PDF links for Mathematics -->
                     </ul>
                 </div>
@@ -173,12 +173,12 @@
                 <h3>2nd Term Test</h3>
                 <div class="subject-container">
                     <ul class="pdf-list">
-                        <li><a href="path/to/2nd_term_math.pdf" class="pdf-link"><span class="pdf-icon"></span>Download Mathematics PDF</a></li>
+                        <li><a href="grade1-term-tests-interactive.html" class="pdf-link"><span class="pdf-icon"></span>Download Mathematics PDF</a></li>
                     </ul>
                 </div>
                 <div class="subject-container">
                     <ul class="pdf-list">
-                        <li><a href="path/to/2nd_term_science.pdf" class="pdf-link"><span class="pdf-icon"></span>Download Science PDF</a></li>
+                        <li><a href="grade1-term-tests-interactive.html" class="pdf-link"><span class="pdf-icon"></span>Download Science PDF</a></li>
                     </ul>
                 </div>
                 <p class="last-update">Last Update: October 17, 2024</p>
@@ -190,18 +190,27 @@
                 <div class="subject-container">
 
                     <ul class="pdf-list">
-                        <li><a href="path/to/3rd_term_math.pdf" class="pdf-link"><span class="pdf-icon"></span>Download Mathematics PDF</a></li>
+                        <li><a href="grade1-term-tests-interactive.html" class="pdf-link"><span class="pdf-icon"></span>Download Mathematics PDF</a></li>
                     </ul>
                 </div>
                 <div class="subject-container">
 
                     <ul class="pdf-list">
-                        <li><a href="path/to/3rd_term_science.pdf" class="pdf-link"><span class="pdf-icon"></span>Download Science PDF</a></li>
+                        <li><a href="grade1-term-tests-interactive.html" class="pdf-link"><span class="pdf-icon"></span>Download Science PDF</a></li>
                     </ul>
                 </div>
                 <p class="last-update">Last Update: October 17, 2024</p>
             </div>
         </section>
+        <script>
+            const lastUpdateElements = document.querySelectorAll('.last-update');
+            const currentDate = new Date().toLocaleDateString('en-GB', {
+                day: 'numeric', month: 'long', year: 'numeric'
+            });
+            lastUpdateElements.forEach(el => {
+                el.textContent = `Last Update: ${currentDate}`;
+            });
+        </script>
 
 
     </main>
