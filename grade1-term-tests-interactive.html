@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grade 1 Term Tests - Papers Zone</title>
+    <link rel="stylesheet" href="PapersZone.css">
+    <style>
+        /* General Styling */
+        body {
+            font-family: Arial, sans-serif;
+            color: white;
+            background: linear-gradient(135deg, #0d0221, #00001f);
+        }
+
+        header {
+            background: linear-gradient(135deg, #1f1f20, #00001f);
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        .term-test-section {
+            width: 90%;
+            padding: 20px;
+            border-radius: 20px;
+            background: linear-gradient(135deg, #000027, #0b0247);
+            color: white;
+            text-align: left;
+            margin: 20px auto;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .pdf-viewer {
+            width: 100%;
+            height: 500px;
+            border: none;
+            margin-top: 20px;
+            border-radius: 10px;
+            background: #0a0a2e;
+        }
+
+        .pdf-description {
+            font-size: 1.2em;
+            margin-bottom: 15px;
+            line-height: 1.6;
+        }
+
+        .pdf-actions {
+            display: flex;
+            justify-content: start;
+            gap: 10px;
+            margin-top: 15px;
+        }
+
+        .pdf-button {
+            padding: 10px 20px;
+            border-radius: 20px;
+            text-decoration: none;
+            color: white;
+            font-size: 1.1em;
+            background: linear-gradient(135deg, #06003d, #0d045a);
+            transition: transform 0.3s, box-shadow 0.3s;
+            display: inline-block;
+            cursor: pointer;
+        }
+
+        .pdf-button:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        .description-container {
+            width: 90%;
+            margin: 30px auto;
+            padding: 20px;
+            border-radius: 20px;
+            background: linear-gradient(135deg, #14121f, #1a1a36);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .description-container:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 25px rgba(0, 0, 0, 0.3);
+        }
+
+        .description-container h2 {
+            font-size: 1.8em;
+            margin-bottom: 15px;
+            color: #ffffff;
+        }
+
+        .last-update {
+            font-size: 0.9em;
+            color: #ffffff;
+            text-align: center;
+            margin-top: 15px;
+        }
+
+        .back-button {
+            margin-top: 20px;
+            padding: 12px 24px;
+            background: linear-gradient(135deg, #0c0137, #040351);
+            color: white;
+            border: none;
+            border-radius: 30px;
+            font-size: 1em;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            cursor: pointer;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .back-button:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 20px rgb(52, 8, 213);
+        }
+    </style>
+</head>
+<body class="grade-page">
+    <header>
+        <div class="header-content">
+            <h1>Grade 1 Term Tests</h1>
+            <p class="tagline">Discover the Term Test Papers for Grade 1 Subjects</p>
+        </div>
+    </header>
+
+    <main>
+        <!-- Return Button -->
+        <div style="text-align: center;">
+            <a href="grade1.html" class="back-button">Return to Grade 1</a>
+        </div>
+        
+        <!-- Term Test Section -->
+        <div class="term-test-section">
+            <h3>1st Term Test - Mathematics</h3>
+            <p class="pdf-description">
+                Welcome to the Mathematics term test for Grade 1. This PDF contains a comprehensive overview of the topics 
+                covered in the first term. Use this preview to explore the contents and click the download button for offline access.
+            </p>
+            <!-- Always Visible PDF Preview -->
+            <iframe class="pdf-viewer" src="test.pdf"></iframe>
+            <div class="pdf-actions">
+                <a href="test.pdf" target="_blank" class="pdf-button">Download</a>
+            </div>
+            <p class="last-update">Last Update: October 17, 2024</p>
+        </div>
+
+        <!-- Additional Term Test Sections can be added similarly -->
+        
+        <!-- Description Section -->
+        <div class="description-container">
+            <h2>About This Resource</h2>
+            <p class="pdf-description">
+                Papers Zone provides essential resources like Grade 1 term tests to help students achieve academic success. 
+                Preview the materials online or download them for offline study, allowing flexible learning at your convenience.
+            </p>
+            <p class="pdf-description">
+                Our goal is to ensure every student has access to quality educational materials. Explore our vast collection and 
+                prepare effectively for each academic term with Papers Zone.
+            </p>
+        </div>
+    </main>
+<script>
+    
+    const lastUpdateElements = document.querySelectorAll('.last-update');
+    const currentDate = new Date().toLocaleDateString('en-GB', {
+        day: 'numeric', month: 'long', year: 'numeric'
+    });
+    lastUpdateElements.forEach(el => {
+        el.textContent = `Last Update: ${currentDate}`;
+    });
+</script>
+
+
+    <footer>
+        <p>&copy; 2024 Papers Zone. All rights reserved.</p>
+        <p>&copy; Bhathiya Kaveesh</p>
+    </footer>
+</body>
+</html>
