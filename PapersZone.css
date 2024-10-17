@@ -1,6 +1,7 @@
 * {
     box-sizing: border-box;
 }
+
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
@@ -14,31 +15,31 @@ body {
     background-position: 0 0, 0 0, 0 0;
 }
 
-body {
-    opacity: 1 !important;
-    transition: opacity 0.3s ease-in-out;
-}
-
 /* Slide-in header */
 header {
     animation: slideIn 1s ease-out;
 }
+
 @keyframes slideIn {
     from { transform: translateY(-100%); opacity: 0; }
     to { transform: translateY(0); opacity: 1; }
 }
+
 /* Fade-in dropdown */
 .dropdown {
     opacity: 0;
     transition: opacity 0.4s ease;
 }
+
 .show {
     opacity: 1;
 }
+
 @keyframes blinkCursor {
     0%, 100% { border-color: transparent; }
     50% { border-color: black; }
 }
+
 .search-bar {
     padding: 12px;
     border: none;
@@ -47,10 +48,12 @@ header {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     font-size: 1em;
 }
+
 #search-bar {
     caret-color: transparent; /* Hides the default caret */
     animation: blinkCursor 0.7s infinite;
 }
+
 header {
    
     color: rgb(53, 49, 49);
@@ -59,19 +62,25 @@ header {
     position: relative; /* Keep this for layout purposes */
     z-index: 1; /* Ensure the header is above other content */
 }
+
 .hero h2, .hero p {
     opacity: 0;
     animation: fadeIn 1s ease forwards;
 }
+
 .hero h2 {
     animation-delay: 0.5s;
 }
+
 .hero p {
     animation-delay: 1s;
 }
+
 @keyframes fadeIn {
     to { opacity: 1; }
 }
+
+
 /* Pulse button effect */
 .hero .cta-button {
     margin-top: 20px;
@@ -84,6 +93,7 @@ header {
     font-size: 1.1em;
     animation: pulse 1.5s infinite;
 }
+
 @keyframes pulse {
     0% { transform: scale(1); }
     50% { transform: scale(1.05); }
@@ -95,6 +105,7 @@ header {
     transform: translateY(20px);
     transition: opacity 0.6s ease-out, transform 0.6s ease-out;
 }
+
 .scroll-reveal.show {
     opacity: 1;
     transform: translateY(0);
@@ -103,9 +114,12 @@ header {
     opacity: 0;
     transition: opacity 0.4s;
 }
+
 #backToTop.show {
     opacity: 1;
 }
+
+
 .logo h1 {
     margin: 0;
     font-size: 2.5em;/* Slide-up and Fade-in Animation */
@@ -123,25 +137,31 @@ header {
     font-weight: bold;
     letter-spacing: 1px;
 }
+
 /* Logo Container Styling */
 .logo-container {
     text-align: center;
     margin-top: 20px;
 }
+
 /* Logo Image Styling */
 .logo {
     width: 210px;
     height: auto;
     display: inline-block;
 }
+
+
 @keyframes pulse {
     0% { transform: scale(1); }
     50% { transform: scale(1.03); }
     100% { transform: scale(1); }
 }
+
 .search-container {
     margin: 20px 0;
 }
+
 .search-bar {
     padding: 12px;
     border: none;
@@ -150,6 +170,7 @@ header {
     font-size: 1em;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
+
 .navbar {
     list-style-type: none;
     padding: 0;
@@ -160,19 +181,23 @@ header {
     border-radius: 60px; /* Rounded corners */
     padding: 10px; /* Padding around the menu items */
 }
+
 .navbar li {
     position: relative;
     margin: 0 20px;
 }
+
 .navbar a {
     color: white;
     text-decoration: none;
     font-size: 1.1em;
     transition: color 0.3s;
 }
+
 .navbar a:hover {
     color: #007BFF;
 }
+
 .dropdown {
     display: none;
     position: absolute;
@@ -186,21 +211,26 @@ header {
     z-index: 100;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
 }
+
 .dropdown li {
     display: block;
 }
+
 .dropdown li a {
     display: block;
     color: #fff;
     padding: 10px 15px;
     text-decoration: none;
 }
+
 .dropdown li a:hover {
     background-color: #007BFF; /* Lighten background on hover */
 }
+
 .show {
     display: block; /* Show dropdown */
 }
+
 .hero {
     padding: 60px 20px;
     text-align: center;
@@ -210,19 +240,24 @@ header {
     margin: 20px auto;
     max-width: 800px;
 }
+
 .hero h2 {
     font-size: 2.5em;
     margin: 0;
 }
+
 .hero p {
     font-size: 1.2em;
     margin-top: 10px;
 }
+
+
 .grades h2 {
     font-size: 3em;
     text-align: center;
     margin-bottom: 20px;
 }
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -230,6 +265,7 @@ body {
     background-color: #f4f4f4;
     line-height: 1.6;
 }
+
 header {
     background-color: #1d1f21;
     color: white;
@@ -237,14 +273,17 @@ header {
     padding: 20px 0;
     position: relative;
 }
+
 .logo h1 {
     margin: 0;
     font-size: 36px;
     font-weight: bold;
 }
+
 .search-container {
     margin: 20px 0;
 }
+
 .search-bar {
     padding: 10px;
     border-radius: 25px;
@@ -253,10 +292,12 @@ header {
     font-size: 16px;
     transition: border-color 0.3s;
 }
+
 .search-bar:focus {
     outline: none;
     border-color: #ffeb3b;
 }
+
 .search-button {
     padding: 10px 15px;
     border: none;
@@ -267,30 +308,37 @@ header {
     cursor: pointer;
     transition: background-color 0.3s, transform 0.3s;
 }
+
 .search-button:hover {
     background-color: #ffd600;
     transform: translateY(-2px);
 }
+
 .navbar {
     margin: 20px 0;
 }
+
 .navbar ul {
     list-style-type: none;
     padding: 0;
 }
+
 .navbar li {
     display: inline;
     margin: 0 15px;
     position: relative;
 }
+
 .navbar a {
     color: rgba(255, 255, 255, 0.928);
     text-decoration: none;
     transition: color 0.3s;
 }
+
 .navbar a:hover {
     color: #3b8dff;
 }
+
 .dropdown {
     display: none;
     position: absolute;
@@ -300,22 +348,27 @@ header {
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
+
 .navbar li:hover .dropdown {
     display: block;
 }
+
 .dropdown li {
     display: block;
 }
+
 .dropdown a {
     display: block;
     padding: 10px;
     color: white;
     transition: background-color 0.3s;
 }
+
 .dropdown a:hover {
     background-color: #ffeb3b;
     color: #081159;
 }
+
 main {
     padding: 20px;
 }
