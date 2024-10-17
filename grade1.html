@@ -32,7 +32,6 @@
             padding: 20px 0;
             text-align: center;
             position: relative;
-            overflow: hidden;
         }
 
         header .header-content h1 {
@@ -158,10 +157,57 @@
         <div class="header-content">
             <h1>Grade 1 Past Papers</h1>
             <p class="tagline">Explore resources and past papers for Grade 1 in all subjects</p>
+                    <nav>
+            <ul class="navbar">
+                <li><a href="index.html" onclick="toggleDropdown(event, 'home')">Home</a></li>
+                <li>
+                    <a href="#" onclick="toggleDropdown(event, 'grades')">Grades</a>
+                    <ul class="dropdown" id="grades">
+                        <li><a href="grade1.html">Grade 1</a></li>
+                        <li><a href="#">Grade 2</a></li>
+                        <li><a href="#">Grade 3</a></li>
+                        <li><a href="#">Grade 4</a></li>
+                        <li><a href="#">Grade 5</a></li>
+                        <li><a href="#">Grade 6</a></li>
+                        <li><a href="#">Grade 7</a></li>
+                        <li><a href="#">Grade 8</a></li>
+                        <li><a href="#">Grade 9</a></li>
+                        <li><a href="#">Grade 10</a></li>
+                        <li><a href="#">Grade 11</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" onclick="toggleDropdown(event, 'medium')">Medium</a>
+                    <ul class="dropdown" id="medium">
+                        <li><a href="#">English</a></li>
+                        <li><a href="#">Sinhala</a></li>
+                        <li><a href="#">Tamil</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" onclick="toggleDropdown(event, 'provincial')">Provincial Papers</a>
+                    <ul class="dropdown" id="provincial">
+                        <li><a href="#">Western</a></li>
+                        <li><a href="#">Central</a></li>
+                        <li><a href="#">Southern</a></li>
+                        <li><a href="#">North Central</a></li>
+                        <li><a href="#">Sabaragamuwa</a></li>
+                        <li><a href="#">Uva</a></li>
+                        <li><a href="#">Eastern</a></li>
+                        <li><a href="#">Northern</a></li>
+                        <li><a href="#">North Western</a></li>
+
+                    </ul>
+                </li>
+                <li><a href="#">About</a></li>
+            </ul>
+        </nav>
         </div>
+        
     </header>
     <!-- Main Content -->
     <main>
+        
         <section class="hero-section">
             <div class="hero-content">
                 <h2>Welcome to Grade 1 Resources</h2>
@@ -205,8 +251,7 @@
                 <div class="subject-card" onclick="window.location.href='path/to/catholicism.pdf';">
                     <img src="Catholic.ico" alt="Catholicism Icon" class="subject-icon">
                     <h3>Catholicism</h3>
-                </div>
-<br></br>
+
 </div>
 </div>
 
