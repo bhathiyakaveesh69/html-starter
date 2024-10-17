@@ -6,96 +6,204 @@
     <title>Grade 1 Term Tests - Papers Zone</title>
     <link rel="stylesheet" href="PapersZone.css">
     <style>
-        /* Custom styles for term test sections */
+        /* Styles for the Term Test Page */
         .term-tests-container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
             margin-top: 20px;
-            gap: 20px;
         }
 
+        header {
+    background:linear-gradient(135deg, #1f1f20, #00001f);
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+}
+
         .term-test-section {
-            width: 80%;
+            width: 90%;
             padding: 20px;
-            border-radius: 15px;
-            background: linear-gradient(135deg, #081483, #1358a7);
+            border-radius: 20px;
+            background: linear-gradient(135deg, #000027,#0b0247 );
             color: white;
-            text-align: center;
+            text-align: left;
             transition: transform 0.3s, background-color 0.3s, box-shadow 0.3s;
+            margin: 20px auto;
+        }
+        
+        .term-tests-container {
+            width: 100%;
+            padding: 20px;
+            border-radius: 20px;
+            background: linear-gradient(135deg, #07012d, #00001f);
+            color: white;
+            text-align: left;
+            transition: transform 0.3s, background-color 0.3s, box-shadow 0.3s;
+            margin: 20px auto;
+        }
+        .header {
+            background: linear-gradient(135deg, #2c0ef2, #00001f);
+
         }
 
         .term-test-section:hover {
             transform: translateY(-10px);
-            background-color: #0056b3;
+            background-color: #ffffff;
             box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
         }
 
         .term-test-section h3 {
             margin-bottom: 10px;
+            font-size: 1.8em;
         }
 
-        .term-test-list {
-            list-style: none;
+        .subject-container {
+            padding: 15px;
+            margin-left: 20px;
+            border-left: 4px solid #141414;
+            background: linear-gradient(135deg, #170c92, #00001f);
+            border-radius: 20px;
+            margin-top: 10px;
+        }
+
+        .subject-container h4 {
+            font-size: 1.5em;
+            margin-bottom: 5px;
+            color: #fff;
+        }
+
+        .pdf-list {
+            list-style-type: none;
             padding: 0;
             margin: 0;
         }
 
-        .term-test-list li {
+        .pdf-list li {
             margin: 10px 0;
         }
 
-        .term-test-list li a {
+        .pdf-list li a {
             color: #ffffff;
             text-decoration: none;
+            font-size: 1.2em;
             transition: color 0.3s;
+            display: flex;
+            align-items: center;
         }
 
-        .term-test-list li a:hover {
-            color: #ffeb3b;
+        .pdf-list li a:hover {
+            color: #6365e8;
+        }
+
+        .pdf-icon {
+            margin-right: 10px;
+            font-size: 1.2em;
+            color: #ffffff;
+        }
+
+        .last-update {
+            font-size: 0.9em;
+            color: #ffffff;
+            margin-top: 15px;
+            text-align: center;
+        }
+
+        .back-button {
+            margin-top: 20px;
+            padding: 12px 24px;
+            background: linear-gradient(135deg, #0c0137, #040351);
+            color: white;
+            border: none;
+            border-radius: 30px;
+            font-size: 1em;
+            cursor: pointer;
+            text-align: center;
+            display: inline-block;
+            transition: transform 0.3s, box-shadow 0.3s;
+            text-decoration: none;
+        }
+
+        .back-button:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 20px rgb(52, 8, 213);
+        }
+
+        /* Additional Styles for icons */
+        .pdf-icon:before {
+            content: '➤';
+            margin-right: 8px;
         }
     </style>
 </head>
 <body class="grade-page">
     <header>
+        
         <div class="header-content">
             <h1>Grade 1 Term Tests</h1>
-            <p class="tagline">Explore Term Test Papers for Grade 1</p>
+            <p class="tagline">Discover the Term Test Papers for Grade 1 Subjects</p>
         </div>
     </header>
 
     <main>
+                <!-- Return Button -->
+                <div style="text-align: center;">
+                    <a href="grade1.html" class="back-button">Return to Grade 1</a>
+                </div>
         <section class="term-tests-container">
             <!-- 1st Term Test Section -->
             <div class="term-test-section">
                 <h3>1st Term Test</h3>
-                <ul class="term-test-list">
-                    <li><a href="path/to/1st_term_math.pdf">Mathematics</a></li>
-                    <li><a href="path/to/1st_term_science.pdf">Science</a></li>
-                    <!-- Add more links for other subjects -->
-                </ul>
+                <div class="subject-container">
+                    <ul class="pdf-list">
+                        <li><a href="path/to/1st_term_math.pdf" class="pdf-link"><span class="pdf-icon"></span>Download Mathematics PDF</a></li>
+                        <!-- Add more PDF links for Mathematics -->
+                    </ul>
+                </div>
+                <div class="subject-container">
+                    <ul class="pdf-list">
+                        <li><a href="path/to/1st_term_science.pdf" class="pdf-link"><span class="pdf-icon"></span>Download Science PDF</a></li>
+                        <!-- Add more PDF links for Science -->
+                    </ul>
+                </div>
+                <!-- Additional subjects for 1st Term -->
+                <p class="last-update">Last Update: October 17, 2024</p>
             </div>
 
             <!-- 2nd Term Test Section -->
             <div class="term-test-section">
                 <h3>2nd Term Test</h3>
-                <ul class="term-test-list">
-                    <li><a href="path/to/2nd_term_math.pdf">Mathematics</a></li>
-                    <li><a href="path/to/2nd_term_science.pdf">Science</a></li>
-                    <!-- Add more links for other subjects -->
-                </ul>
+                <div class="subject-container">
+                    <ul class="pdf-list">
+                        <li><a href="path/to/2nd_term_math.pdf" class="pdf-link"><span class="pdf-icon"></span>Download Mathematics PDF</a></li>
+                    </ul>
+                </div>
+                <div class="subject-container">
+                    <ul class="pdf-list">
+                        <li><a href="path/to/2nd_term_science.pdf" class="pdf-link"><span class="pdf-icon"></span>Download Science PDF</a></li>
+                    </ul>
+                </div>
+                <p class="last-update">Last Update: October 17, 2024</p>
             </div>
 
             <!-- 3rd Term Test Section -->
             <div class="term-test-section">
                 <h3>3rd Term Test</h3>
-                <ul class="term-test-list">
-                    <li><a href="path/to/3rd_term_math.pdf">Mathematics</a></li>
-                    <li><a href="path/to/3rd_term_science.pdf">Science</a></li>
-                    <!-- Add more links for other subjects -->
-                </ul>
+                <div class="subject-container">
+
+                    <ul class="pdf-list">
+                        <li><a href="path/to/3rd_term_math.pdf" class="pdf-link"><span class="pdf-icon"></span>Download Mathematics PDF</a></li>
+                    </ul>
+                </div>
+                <div class="subject-container">
+
+                    <ul class="pdf-list">
+                        <li><a href="path/to/3rd_term_science.pdf" class="pdf-link"><span class="pdf-icon"></span>Download Science PDF</a></li>
+                    </ul>
+                </div>
+                <p class="last-update">Last Update: October 17, 2024</p>
             </div>
         </section>
+
+
     </main>
 
     <footer>
