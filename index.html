@@ -5,8 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="PaperLogo.ico" type="image/x-icon"> <!-- Adjust the path accordingly -->
     <title>Papers Zone</title>
-    <link rel="stylesheet" href="C:\Users\DELL\Desktop\PapersZone\PapersZone.css">
-    
+    <link rel="stylesheet" href="PapersZone.css">
+    <link rel="preload" href="PapersZone.css" as="style" onload="this.rel='stylesheet'">
+
 </head>
 <body style="background-color:#d5cece;">
 
@@ -312,6 +313,19 @@ window.onload = () => {
         };
     </script>
     <style>
+
+       
+    body {
+        visibility: hidden;
+    }
+
+    body.fade-in {
+        visibility: visible;
+        opacity: 1;
+        transition: opacity 0.3s ease-in;
+    }
+
+
         * {
     box-sizing: border-box;
 }
