@@ -13,6 +13,12 @@ body {
     background-size: 50px 50px, 50px 100%, 100% 50px;
     background-position: 0 0, 0 0, 0 0;
 }
+
+body {
+    opacity: 1 !important;
+    transition: opacity 0.3s ease-in-out;
+}
+
 /* Slide-in header */
 header {
     animation: slideIn 1s ease-out;
